@@ -20,7 +20,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 
 // polyfills
-
+if(self === undefined) var self = {};
 if ( self.requestAnimationFrame === undefined || self.cancelAnimationFrame === undefined ) {
 
 	// Missing in Android stock browser.
